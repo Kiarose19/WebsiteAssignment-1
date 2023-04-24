@@ -1,0 +1,825 @@
+body {
+    font-family: cursive;
+    background: url(/Images/efa11f43d56f65bf07d73ea3a44d2041.jpg) no-repeat;
+    background-size: cover;
+    height: 100vh;
+}
+
+nav {
+    background: rgba(240, 179, 189, 0.9);
+    backdrop-filter: blur (7px);
+    height: 85px;
+    width: 100%;
+}
+
+.logo {
+    color: rgb(149, 121, 56);
+    font-size: 38px;
+    font-weight: bold;
+    line-height: 80px;
+    margin: 0 50px;
+}
+
+nav ul {
+    float: right;
+    margin-right: 30px;
+}
+
+nav ul li {
+    display: inline-block;
+    margin-right: 24px;
+    margin-top: 10px;
+    position: relative;
+}
+
+nav ul li a {
+    font-size: 22px;
+    color: black;
+    text-decoration: none;
+}
+
+nav ul li::after{
+    content: '';
+    width: 0%;
+    height: 3px;
+    background: rgb(149, 121, 56);
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+
+nav ul li:hover::after{
+    width: 100%;
+}
+
+.text-box{
+    width: 90%;
+    color: rgb(98, 89, 16);
+    position: absolute;
+    top: 45%;
+    left: 5%;
+    transform: translate(-50% -50%);
+    text-align: center;
+     
+}
+
+.text-box h1 {
+    font-size: 50px;
+}
+
+.text-box p {
+    margin: 10px 0 40px;
+    font-size: 14px;
+    color: black;
+}
+
+.first-btn {
+    display: inline-block;
+    text-decoration: none;
+    color:rgb(70, 64, 19) ;
+    border: 1px solid black;
+    padding: 12px 34px;
+    font-size: 13px;
+    background: transparent;
+    position: relative;
+    cursor: pointer;
+}
+
+.first-btn:hover {
+    border: 1px solid rgba(149, 121, 56, 0.777);
+    background: rgba(149, 121, 56, 0.638);
+    transition: 1s;
+}
+
+
+#logo {
+    width: 62px;
+    margin: 0 0 -15px -26px;
+}
+
+nav .fa {
+    display: none;
+}
+
+@media (max-width: 700px) {
+    text-box h1 {
+        font-size: 20px;
+    }
+    nav ul li {
+        display: block;
+    }
+    nav {
+        position: absolute;
+        background:rgba(149, 121, 56, 0.777) ;
+        height: 100vh;
+        width: 200px;
+        top: 0;
+        right: -200px;
+        text-align: left;
+        z-index: 2;
+    }
+
+    nav .fa {
+        display: block;
+        color: black;
+        margin: 10px;
+        font-size: 22px;
+        cursor: pointer;
+    }
+
+    nav ul {
+        padding: 30px;
+    }
+}
+
+/*------ Blogs ------*/
+
+.Blogs{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 890px;
+}
+h1{
+    font-size: 36px;
+    font-weight: 600;
+}
+
+p{
+    color:rgb(98, 89, 16) ;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 22px;
+    padding: 10px;
+}
+
+.row{
+    margin-top: 5%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.Blogs-column{
+    flex-basis: 31%;
+    background: lightpink;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    padding: 20px 12px;
+    box-sizing: border-box;
+    transition: 0.5s;
+}
+
+h3{
+    text-align: center;
+    font-weight: 600;
+    margin: 10px 0;
+}
+
+.Blogs-column:hover{
+     box-shadow: 0 0 20px 0px rgba(9, 8, 8, 0.282);
+}
+
+@media (max-width: 700px){
+    .row{
+        flex-direction: column;
+    }
+}
+
+.Blogss {
+    width: 90%;
+    margin: auto;
+    text-align: center;
+    position: relative;
+    top: -30px;
+}
+
+
+/*--------- Design Page --------*/
+
+.Design{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 50px;
+}
+
+.design-column{
+    flex-basis: 32%;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    position: relative;
+    overflow: hidden;
+    
+}
+
+.design-column img {
+    width: 100%;
+    display: block;
+}
+
+.layer {
+    background: transparent;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: 0.5s;
+}
+
+.layer:hover{
+    background: rgba(147, 130, 37, 0.59);
+}
+
+.layer h3 {
+    width: 100%;
+    font-weight: 500;
+    color:rgb(98, 89, 16) ;
+    font-size: 26px;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    position: absolute;
+    opacity: 0;
+    transition: 0.5s;
+}
+
+.layer:hover h3 {
+    bottom: 53%;
+    opacity: 1;
+}
+
+/*-------- Essay Section --------*/
+
+.Essays {
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 50px;
+}
+
+.Essays-column {
+    flex-basis: 31%;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    text-align: left;
+}
+
+.Essays-column img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.Essays-column p{
+    padding: 0;
+}
+
+.Essays-column h3 {
+    margin-top: 16px;
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+/*------ Portfolio ------*/
+
+.Portfolio{
+    width: 80%;
+    margin: auto;
+    padding-top: 50px;
+    text-align: center;
+}
+
+.Portfolio-column {
+    flex-basis: 100%;
+    border-radius: 10px;
+    margin-bottom: 5%;
+   text-align: center; 
+    background: rgb(254, 189, 199);
+    padding: 25px;
+    cursor: pointer;
+    display: flex;
+}
+
+.Portfolio-column p{
+    padding: 0;
+}
+
+/*------- Contact Me ---------*/
+
+.Contact{
+    margin: 90px auto;
+    width: 60%;
+    background-image: url(Images/phone.jpg);
+    background-position: center;
+    background-size: cover;
+    border-radius: 10px;
+    text-align: center;
+    padding: 90px 0;
+
+}
+
+.Contact h1{
+    margin-bottom: 40px;
+    padding: 0;
+}
+
+.Contact a {
+    margin-top: 15px;
+    font-weight: 700;
+}
+
+@media (max-width: 700px){
+    .Contact h1 {
+        font-size: 24px;
+    }
+}
+
+/*------- Footer --------*/
+
+.Footer{
+    width: 100%;
+    text-align: center;
+    padding: 30px 0;
+    
+}
+
+.Footer h4 {
+    margin-bottom: 25px;
+    margin-top: 20px;
+    font-weight: 600;
+}
+
+.icons .fa{
+    color:rgb(149, 121, 56) ;
+    margin: 0 13px;
+    cursor: pointer;
+    padding: 18px 0;
+    
+}
+
+/*-------- About Us Page----------*/
+
+.sub-header{
+    height: 100vh;
+    width: 100%;
+    background-image: url(Images/12263071_4935402\ \(1\).jpg) no-repeat ;
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+    color:rgb(98, 89, 16) ;
+}
+
+.sub-header h1{
+    margin-top: 60px;
+}
+
+.about-us h1{
+    margin: auto;
+    text-align: center;
+    top: -600px;
+    position: relative;
+    
+}
+
+.about-us p{
+    margin: auto;
+    text-align: center;
+    top: -550px;
+    position: relative;
+    font-weight: bold;
+    font-size: 16px;
+    color: black;
+    
+}
+
+.profile-column img{
+    border-radius: 50%;
+    width: 150px;
+    padding-left: 30px;
+    padding-right: 20px;
+    
+}
+
+.profile-column p{
+    text-align: left;
+    margin-right: 170px;
+    border: solid;
+    position: relative;
+    top: -70px;
+    padding-left: 30px;
+    font-size: 16px;
+}
+
+.myprofile h1{
+    margin-top: -150px;
+    margin-left: 20px;
+    color: rgb(98, 89, 16);
+}
+
+/*--------- Blogs -----------*/
+
+.sub-sub-header{
+    text-align: center;
+    color:rgb(98, 89, 16) ;
+    width: 90%;
+    margin: auto;
+    text-align: center;
+}
+
+.sub-sub-header h1{
+    margin-top: 50px;
+}
+
+.sub-sub-header h2{
+    margin-top: 65px;
+}
+/*------------- Contact Us Page ------------*/
+
+.title{
+    text-align: center;
+    color:rgb(98, 89, 16) ;
+}
+
+.title h1{
+    margin-top: 50px;
+}
+
+/*--------------- Design Page---------------*/
+
+.heading{
+    text-align: center;
+    color:rgb(98, 89, 16) ;
+}
+
+.heading h1{
+    margin-top: 50px;
+}
+
+.heading p{
+    font-size: 24px;
+    font-weight: 520;
+}
+
+.Blogdocuments{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    
+}
+
+.Blogdocuments p{
+    border: solid;
+    text-align: center;
+    border-radius: 10px;
+    background-color: rgba(255, 196, 205, 0.749);
+}
+
+.Blogdocuments h1{
+    margin-top: 20px;
+}
+
+.Blogdocuments h2{
+    color:rgb(98, 89, 16) ;
+}
+
+.Blogweek2 {
+    width: 80%;
+    margin: auto;
+    text-align: center;
+}
+
+.Blogweek2 p{
+    border: solid;
+    text-align: center;
+    border-radius: 10px;
+    background-color: rgba(255, 196, 205, 0.749);
+}
+
+.Blogweek2 h2{
+    margin-top: 100px;
+    color:rgb(98, 89, 16) ;
+}
+
+.Blogweek3 {
+    width: 80%;
+    margin: auto;
+    text-align: center;
+}
+
+.Blogweek3 p{
+    border: solid;
+    text-align: center;
+    border-radius: 10px;
+    background-color: rgba(255, 196, 205, 0.749);
+}
+
+.Blogweek3 h2{
+    margin-top: 100px;
+    color:rgb(98, 89, 16) ;
+}
+
+.Blogweek4 {
+    width: 80%;
+    margin: auto;
+    text-align: center;
+}
+
+.Blogweek4 p{
+    border: solid;
+    text-align: center;
+    border-radius: 10px;
+    background-color: rgba(255, 196, 205, 0.749);
+}
+
+.Blogweek4 h2 {
+    margin-top: 100px;
+    color:rgb(98, 89, 16) ;
+}
+
+.Blogweek5 {
+    width: 80%;
+    margin: auto;
+    text-align: center;
+}
+
+.Blogweek5 p{
+    border: solid;
+    text-align: center;
+    border-radius: 10px;
+    background-color: rgba(255, 196, 205, 0.749);
+}
+
+.Blogweek5 h2{
+    margin-top: 100px;
+    color:rgb(98, 89, 16) ;
+}
+
+.Blogweek7 {
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    
+}
+
+.Blogweek7 p{
+    border: solid;
+    text-align: center;
+    border-radius: 10px;
+    background-color: rgba(255, 196, 205, 0.749);
+}
+
+.Blogweek7 h2{
+    margin-top: 100px;
+    color:rgb(98, 89, 16) ;
+}
+
+.Bottomofpage {
+    width: 50%;
+    margin: auto;
+    text-align: center;
+    
+}
+
+.button1{
+    border: 5px solid black;
+    border-radius: 10px;
+    position: relative;
+    top: 70px;
+    background-color: rgba(98, 88, 16, 0.453);
+    color: black;
+}
+
+.button2{
+    color: rgb(98, 89, 16) ;
+    font-weight: 400;
+}
+
+.button3{
+    color: rgb(98, 89, 16) ;
+    font-weight: 400;
+}
+
+.button4{
+    color: rgb(98, 89, 16) ;
+    font-weight: 400;
+}
+
+.button5{
+    color: rgb(98, 89, 16) ;
+    font-weight: 400;
+}
+
+.button6{
+    color: rgb(98, 89, 16) ;
+    font-weight: 400;
+}
+
+.button7{
+    color: rgb(98, 89, 16) ;
+    font-weight: 400;
+}
+
+/*------ Portfolio page -----------*/
+
+*{
+    box-sizing: border-box;
+}
+
+.myworks body{
+    margin: 0;
+}
+
+.myworks h1{
+    text-align: center;
+    color: rgb(98, 89, 16);
+}
+
+.myworks .row {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0px 0px;
+}
+
+.profilepage-column{
+    flex: 25%;
+    max-width: 25%;
+    padding: 0px 5px;
+}
+
+.profilepage-column img{
+    margin-top: 8px;
+    vertical-align: middle;
+    width: 100%;
+}
+
+.profilepage-column h2{
+    text-align: center;
+    font-weight: bold;
+    color:rgb(56, 50, 9);
+    font-size: 20px;
+    border: solid;
+    border-radius: 10px;
+    margin: auto;
+    background-color: rgba(98, 88, 16, 0.558);
+} 
+
+.profilepage-column a{
+    text-align: auto;
+    position: relative;
+    top: 30px;
+    margin-left: 100px;
+    border: solid black;
+    padding: 5px 5px;
+    border-radius: 10px;
+    color: black;
+    background-color: rgba(98, 88, 16, 0.558);
+}
+
+/*-----------Design Page-----------*/
+
+.originalwireframes h2{
+    text-align: center;
+    color: rgb(98, 89, 16);
+}
+
+.originalwireframes .row{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0px 0px;
+}
+
+.originalwireframes-column{
+    flex: 25%;
+    max-width: 25%;
+    padding: 0px 10px;
+}
+
+.originalwireframes-column img{
+    margin-top: 8px;
+    vertical-align: middle;
+    width: 100%;
+}
+
+.Documentation h2{
+    text-align: center;
+    color: rgb(98, 89, 16);
+}
+
+.Documentation p{
+    border: solid;
+    text-align: center;
+    border-radius: 10px;
+    background-color: rgba(255, 196, 205, 0.749);
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.Docs h2{
+    text-align: center;
+    color: rgb(98, 89, 16); 
+}
+
+.Docs img{
+    border: solid;
+    position: relative;
+    border-radius: 10px;
+    background-color: rgba(255, 196, 205, 0.749);
+    margin-left:300px;
+    
+    
+}
+
+.style h2{
+    text-align: center;
+    color: rgb(98, 89, 16); 
+}
+
+.style p{
+    border: solid;
+    text-align: center;
+    border-radius: 10px;
+    background-color: rgba(255, 196, 205, 0.749);
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.Styleguide h2{
+    text-align: center;
+    color: rgb(98, 89, 16);  
+}
+
+.Styleguide p{
+    text-align: center;
+}
+
+.Styleguide p{
+    border: solid;
+    text-align: center;
+    border-radius: 10px;
+    background-color: rgba(255, 196, 205, 0.749);
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+*{
+    box-sizing: border-box;
+}
+
+.Wireframess body{
+    margin: 0;
+}
+
+.Wireframess h2{
+    text-align: center;
+    color: rgb(98, 89, 16);
+}
+
+.Wireframess .row {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0px 0px;
+}
+
+.wireframess-column{
+    flex: 25%;
+    max-width: 25%;
+    padding: 0px 5px;
+}
+
+.wireframess-column img{
+    margin-top: 8px;
+    vertical-align: middle;
+    width: 100%;
+    border: solid;
+}
+
+.title body{
+    margin: 0;
+}
+
+.title.row{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0px 0px;
+}
+
+.contact-column{
+    flex: 25%;
+    max-width: 25%;
+    padding: 0px 5px;
+}
+
+.contact-column img{
+    margin-top: 8px;
+    vertical-align: middle;
+    width: 50%;
+    
+}
+
+/*.Header{
+    min-height: 100vh;
+    width: 100%;
+    background-image: url(Images/8720097_3984185.jpg);
+    background-position: center;
+    background-size: cover;
+}
